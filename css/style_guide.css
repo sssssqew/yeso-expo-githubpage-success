@@ -1,0 +1,85 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+    color:white;
+}
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MICEGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MICEGothic';
+    background: url(../img/back_b.png);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    width: 100%;
+    font-size: 16px;
+    color: #333333;
+}
+
+.container_all {
+    margin: 15px;
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.home_btn {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.expo_logo {
+    width: 25%;
+}
+
+
+
+/*진행중인 이벤트*/
+.expo_guide {
+    margin-top: 15%;
+}
+
+.expo_guide_title {
+    font-family: 'MICEGothic Bold';
+    margin-bottom: 10%;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: white;
+}
+
+.expo_guide_contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.expo_guide_contents_box {
+    border: 2px solid white;
+    padding: 25px;
+    width: 45%;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}

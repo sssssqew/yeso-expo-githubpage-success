@@ -1,0 +1,91 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+    color:white;
+}
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MICEGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MICEGothic';
+    width: 100%;
+    font-size: 16px;
+    color: #333333;
+}
+
+.video_all {
+    overflow: hidden;
+}
+
+video {position: fixed; top: 0px; left: 50%; transform: translateX(-46%);  min-height: 100%; width: auto; height: auto; z-index: -1; overflow: hidden;}
+figure {z-index: -1;} /*동영상을 묶어준 부분 레이어 낮춰줌. 백그라운드로 만드는 것!*/
+
+.container_all {
+    margin: 15px;
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.home_btn {
+    font-size: 18px;
+    color: #fcfcfc;
+    cursor: pointer;
+}
+
+.expo_logo {
+    width: 25%;
+}
+
+/*말풍선*/
+.ai_contents {
+    position: absolute;
+    right: 3%;
+    margin-top: 150px;
+}
+
+.ai_contents_top {
+    background: #fcfcfc;
+    padding: 10px 15px;
+    border-radius: 10px 10px 10px 0;
+    font-family: 'MICEGothic Bold';
+    box-shadow: rgb(156, 164, 172) 0 -3px 6px 0px inset, rgb(255 255 255 / 50%) 0 -3px 6px 1px inset;
+}
+
+.ai_contents_bottom {
+    margin-top: 20px;
+    background: #fcfcfc;
+    padding: 10px 15px;
+    border-radius: 10px 10px 10px 0;
+    box-shadow: rgb(156, 164, 172) 0 -3px 6px 0px inset, rgb(255 255 255 / 50%) 0 -3px 6px 1px inset;
+}
+
+.ai_contents_bottom_box {
+    background: #013F7A;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #fcfcfc;
+}
+
+.ai_contents_bottom_box:nth-of-type(2) {
+    margin: 10px 0;
+}

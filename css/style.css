@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .text{
+        display: flex;
+        font-size: 2.4em;
+        justify-content: center;
+        width: 80%;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+        border-radius: 60px;
+        height: 5vh;
+        line-height: 5vh;
+        color:white;
+        font-family: 'MICEGothic Bold';
+    }
+    #canvasWrap {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .header{
+        display: flex;
+        font-size: 2.0em;
+        justify-content: center;
+        width: 100%;
+        color:white;
+        font-family: 'MICEGothic Bold';
+        margin-top: 150px;
+    }
+    .header_2{
+        display: flex;
+        font-size: 3.0em;
+        justify-content: center;
+        width: 100%;
+        color:white;
+        font-family: 'MICEGothic Bold';
+    }

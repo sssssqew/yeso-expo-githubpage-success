@@ -1,0 +1,168 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+      color:white;
+}
+@font-face {
+      font-family: 'MICEGothic Bold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+}
+@font-face {
+      font-family: 'MICEGothic';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+}
+
+body {
+      font-family: 'MICEGothic Bold';
+      background: url(../img/back_b.png);
+      background-size: cover;
+      background-position: bottom;
+      background-attachment: fixed;
+      width: 100%;
+      color: #333333;
+}
+
+.container_all {
+      margin: 15px;
+}
+/*header*/
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+}
+
+.home_btn {
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+}
+
+.expo_logo {
+      width: 25%;
+}
+
+
+
+/*진행중인 이벤트*/
+.expoC {
+      margin-top: 15%;
+}
+
+.expoC_title {
+      font-family: 'MICEGothic Bold';
+      margin-bottom: 10%;
+      font-size: 1.8em;
+      cursor: pointer;
+      color: white;
+}
+
+.expoC_contents_floor {
+      display: flex;
+      font-family: 'MICEGothic Bold';
+      font-size: 1.5em;
+      margin: 0 0 50px 15px;
+}
+
+.expoC_contents_floor_text {
+      cursor: pointer;
+      color: #fcfcfc;
+}
+
+#bf1 {
+      color: #fcfcfc;
+}
+
+#f1 {
+      color: #fcfcfc;
+}
+
+.expoC_contents_floor p {
+      margin-right: 30px;
+}
+
+.expoC_contents_img_all {
+      position: relative;
+      
+}
+
+.expoC_contents_img {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+}
+
+#box1 {
+      display: none;
+}
+
+#img2 {
+      display: none;
+}
+
+.expoC_contents_img_btn {
+      position: absolute;
+      width: 6%;
+}
+
+#restroom_btn_m {
+      top: 23%;
+      left: 52.5%;
+      z-index: 1;
+}
+
+#restroom_btn_w {
+      top: 10%;
+      left: 52.5%;
+}
+
+#f1_restroom_btn_m {
+      top: 30%;
+      left: 10%;
+      z-index: 1;
+}
+
+#f1_restroom_btn_w {
+      top: 12%;
+      left: 14%;
+}
+
+#f1_ele_btn {
+      top: 35%;
+      left: 48%;
+      z-index: 3;
+}
+
+.expoC_contents {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+}
+
+.expoC_contents_btn {
+      margin-top: 30px;
+      width: 30%;
+      padding: 15px;
+      border: none;
+      background: #fcfcfc;
+      border-radius: 50px;
+      font-family: 'MICEGothic Bold';
+      font-size: 16px;
+      color: #333333;
+}
+
+.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+}

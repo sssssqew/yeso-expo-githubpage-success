@@ -1,0 +1,186 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+      color:white;
+}
+@font-face {
+      font-family: 'MICEGothic Bold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+}
+@font-face {
+      font-family: 'MICEGothic';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+}
+
+body {
+      font-family: 'MICEGothic';
+      background: url(../img/back_b.png);
+      background-size: cover;
+      background-position: bottom;
+      background-attachment: fixed;
+      width: 100%;
+      font-size: 16px;
+      color: #333333;
+}
+
+.container_all {
+      margin: 15px;
+}
+/*header*/
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+}
+
+.home_btn {
+      font-size: 18px;
+      color: white;
+}
+
+.expo_logo {
+      width: 25%;
+}
+
+
+
+/*진행중인 이벤트*/
+.ing_event {
+      margin-top: 15%;
+}
+
+.ing_event_title {
+      font-family: 'MICEGothic Bold';
+      margin-bottom: 10%;
+      font-size: 1.8em;
+      cursor: pointer;
+      color: white;
+}
+
+
+/*포스터*/
+
+.ing_event_all {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+}
+
+.ing_event_all_box {
+      width: 45%;
+      background-color: white;
+      border-radius: 0 0 10px 10px;
+      padding-bottom: 20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin-bottom: 25px;
+}
+
+.ing_event_all_box_img {
+      width: 100%
+}
+
+.ing_event_all_box_text {
+      padding: 5px 10px;
+}
+
+.ing_event_all_box_text_top {
+      display: flex;
+      flex-direction: column;
+      height: 75px;
+      justify-content: space-between;
+}
+
+.ing_event_all_box_text_btn {
+      margin:0 auto;
+      display: flex;
+      cursor: pointer;
+      
+}
+
+.ing_event_all_box_text_btn {
+      font-family: 'MICEGothic';
+      border: none;
+      border-radius: 50px;
+      background-color: #FF8C00;
+      color: white;
+      padding: 8px 12px;
+}
+
+/*모달창 */
+.hidden{
+      display: none;
+}
+.modal_back{
+      /* background-color: rgba(0, 0, 0, 0.64); */
+      width: 100%;
+      height: 100vh;
+      position:absolute;
+      top: 0%;
+      left: 0%;
+}
+.modal_kids{
+      width: 75%;
+      height: 85%;
+      background-color: #fcfcfc;
+      position:fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 0 1000px rgba(0,0,0,0.8);
+      overflow-y: auto;
+} 
+.modal_kids img{
+      width: 80%;
+      display: flex;
+      margin: 0 auto;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin-top: 10%;
+}
+.kids_text {
+      width: 100%;
+      padding:30px 0;
+}
+.kids_name{
+      padding: 15px;
+      font-size: 20px;
+}
+
+.modal_kids p:nth-of-type(2n) {
+      margin-bottom: 10px;
+}
+.modal_kids p:nth-of-type(2n-1) {
+      margin-bottom: 3px;
+      font-family: 'MICEGothic Bold';
+}
+.modal_kids p:nth-last-of-type(1) {
+      margin-bottom: 0;
+}
+.close_btn{
+      font-family: 'MICEGothic Bold';
+      width: 40%;
+      font-size: 1.1em;
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+      color: white;
+      background: #FF8C00;
+      display: flex;
+      margin: 0 auto;
+      text-align: center;
+      cursor: pointer;
+}
+
+.close_btn p {
+      display: flex;
+      margin: 0 auto;
+}

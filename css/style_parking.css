@@ -1,0 +1,95 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+      color:white;
+}
+@font-face {
+      font-family: 'MICEGothic Bold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+}
+@font-face {
+      font-family: 'MICEGothic';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+}
+
+body {
+      font-family: 'MICEGothic';
+      background: url(../img/back_b.png);
+      background-size: cover;
+      background-position: bottom;
+      background-attachment: fixed;
+      width: 100%;
+      font-size: 16px;
+      color: #333333;
+}
+
+.container_all {
+      margin: 15px;
+}
+/*header*/
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+}
+
+.home_btn {
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+}
+
+.expo_logo {
+      width: 25%;
+}
+
+
+
+/*진행중인 이벤트*/
+.expo_parking {
+      margin-top: 15%;
+}
+
+.expo_parking_title {
+      font-family: 'MICEGothic Bold';
+      margin-bottom: 10%;
+      font-size: 1.8em;
+      cursor: pointer;
+      color: white;
+}
+
+.expo_parking_contents {
+      background: rgba(130, 130, 130, 0.3);
+      margin: 0 20px;
+      padding: 10px;
+      border-radius: 10px;
+}
+
+.expo_parking_contents_box {
+      border-bottom: 1px solid #707070;
+      padding: 25px 0;
+      color: rgb(237, 237, 237);
+}
+
+.expo_parking_contents_box:nth-last-of-type(1) {
+      border-bottom: none;
+}
+
+.expo_parking_contents_box i {
+      font-size: 20px;
+      margin-bottom: 8px;
+}
+
+.expo_parking_contents_box p {
+      margin-left: 22px;
+}
