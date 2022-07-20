@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진행중인 행사</title>
+    <link rel="stylesheet" href="../css/style_expoC.css">
+    <script src="https://kit.fontawesome.com/5ccccc0448.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div class="container_all">
+            <header>
+                <img class="expo_logo" src="../img/expo_logo_w.png" alt="expo_logo">
+                <div class="home_btn">
+                    <a href="../index.html"><i class="fa-solid fa-house">&nbsp;처음으로</i></a>
+                </div>
+            </header>
+
+            <section class="expoC">
+
+                <div class="expoC_title">
+                    <a href="./index_guide.html"> <i class="fa-solid fa-angle-left">&nbsp;엑스포컨벤션센터</i></a>
+                </div>
+
+                <div class="expoC_contents_all">
+
+                    <div class="expoC_contents_floor">
+                        <!-- <p class="expoC_contents_floor_text" id="b1f" onclick="floorBtn01(), floorFont01()">B1F</p> -->
+                        <p class="expoC_contents_floor_text" id="b1f">B1F</p>
+                        <p class="expoC_contents_floor_text" id="f1" onclick="">1F</p>
+                        <p class="expoC_contents_floor_text" id="f2" onclick="">2F</p>
+                    </div>
+
+                    <div class="expoC_contents_img_all">
+
+                        <!--도면-->
+                        <img class="expoC_contents_img" id="img1" src="../img/expoC_b1.png" alt="엑스포컨벤션센터 지하">
+                        <img class="expoC_contents_img" id="img2" src="../img/expoC_1.png" alt="엑스포컨벤션센터 1층">
+
+                        <!--마커-->
+                        <div id="box1">
+                            <img class="expoC_contents_img_btn" id="restroom_btn_m" src="../img/restroom_m.png" alt="화장실 마크" >
+                            <img class="expoC_contents_img_btn" id="restroom_btn_w"  src="../img/restroom_w.png" alt="화장실 마크" >
+                        </div>
+
+                        <div id="box1_1">
+                            <img class="expoC_contents_img_btn" id="f1_restroom_btn_m" src="../img/restroom_m.png" alt="화장실 마크" >
+                            <img class="expoC_contents_img_btn" id="f1_restroom_btn_w"  src="../img/restroom_w.png" alt="화장실 마크" >
+                        </div>
+
+                        <div id="box2">
+                            <img class="expoC_contents_img_btn" id="f1_ele_btn"  src="../img/ele.png" alt="1층 엘리베이터">
+                        </div>
+                    </div>
+
+                    <div class="expoC_contents">
+                        <button class="expoC_contents_btn" id="restroom" >
+                            <i class="fa-solid fa-restroom">&nbsp;화장실</i>
+                        </button>
+                        <button class="expoC_contents_btn"  id="ele" >
+                            <i class="fa-solid fa-elevator">&nbsp;엘리베이터</i>
+                        </button>
+                        <button class="expoC_contents_btn" id="restaurant">
+                            <i class="fa-solid fa-utensils">&nbsp;식당</i>
+                        </button>
+                        <button class="expoC_contents_btn" id="store">
+                            <i class="fa-solid fa-store">&nbsp;편의점</i>
+                        </button>
+                        <button class="expoC_contents_btn"  id="cash">
+                            <i class="fa-solid fa-sack-dollar">&nbsp;현금인출기</i>
+                        </button>
+                        <button class="expoC_contents_btn"  id="cafe">
+                            <i class="fa-solid fa-mug-saucer">&nbsp;카페</i>
+                        </button>
+                    </div>
+
+                </div>
+                
+            </section>
+
+    </div>
+
+    <script src="../js/expoC_floor.js"></script>
+</body>
+</html>
