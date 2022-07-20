@@ -6,11 +6,11 @@ import * as THREE from './three'
 import './Sky'
 import './Water'
 
-import expo from './img/expo.jpg'
-import back from './img/back.png'
-import logo from './fbx/test.fbx'
-import waternormals from './img/waternormals.jpg'
-import floorImg from './img/floor1.jpg'
+import expo from './public/img/expo.jpg'
+import back from './public/img/back.png'
+import logo from './public/fbx/test.fbx'
+import waternormals from './public/img/waternormals.jpg'
+import floorImg from './public/img/floor1.jpg'
 
 let scene
 let camera

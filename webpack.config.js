@@ -4,21 +4,26 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin") // CSS 파일 번들링 
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin'); // CSS 파일 압축
 const TerserPlugin = require("terser-webpack-plugin") // JAVASCRIPT 파일 압축
+const CopyPlugin = require('copy-webpack-plugin'); // 정적폴더 복사 
 module.exports = {
-    mode: "development",
+    // mode: "development",
     mode: "production", // production 설정시 자바스크립트는 자동으로 압축이 됨 
-    entry : "./main.js",
+    entry : {
+        index: "./main.js",
+    },
     devtool: "source-map",
     devServer: { // 웹팩 개발서버 설정
         static: {
-            // directory: path.join(__dirname, "dist") // 빌드시 dist 폴더의 코드를 읽어서 서브함
-            directory: path.join(__dirname) // 개발모드
+            directory: path.join(__dirname, 'public'), // 개발서버 시작시 public 폴더의 코드를 읽어서 서브함
+            // publicPath: '/', // public URL 경로
           },
           port: 3000, // 개발서버 포트 설정
           compress: true, // 코드 압축여부 설정
     },
     output : { 
-        path : path.resolve(__dirname, "dist"), // 빌드후 코드가 저장될 폴더 설정 
+        path : path.resolve(__dirname, 'dist'), // 빌드후 코드가 저장될 폴더 설정 
+        publicPath: '/yeso-expo/', // 서버의 상대 경로 // build 후 public  메인 URL 경로 (깃허브 저장소 주소) - 빌드시
+        // publicPath: '/', // 서버의 상대 경로 // build 후 public  메인 URL 경로 (깃허브 저장소 주소) - 개발시
         filename : 'main.js', // 빌드후 자바스크립트 파일 이름 설정
         environment: {
             module: true,
@@ -68,11 +73,19 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(), // 사용하지 않는 빌드 파일 삭제 
         new HtmlWebpackPlugin({
+          filename : 'index.html',
           template: './index.html', // html 파일 설정
-          favicon: "img/restroom_m.png" // 파비콘 경로 설정
+          favicon: "./public/img/restroom_m.png" // 파비콘 경로 설정
         }),
+        // new HtmlWebpackPlugin({
+        //     filename : 'index_AI.html',
+        //     template: './html/index_AI.html'
+        // }),
         new MiniCssExtractPlugin({ // CSS 파일을 번들링해서 하나의 CSS 파일로 합쳐주도록 설정
             filename: "style.css" // 빌드 이후의 CSS 파일명
+        }),
+        new CopyPlugin({
+            patterns: [{ from: 'public' }], // public 폴더를 dist 로 복사하는 개념 
         }),
     ],
     optimization: { 
