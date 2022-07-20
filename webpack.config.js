@@ -32,8 +32,8 @@ module.exports = {
     // 빌드된 파일의 크기가 512000 이상이면 경고 메시지 출력
     performance: {
         hints: false,
-        maxEntrypointSize: 512000,
-        maxAssetSize: 512000
+        maxEntrypointSize: 5120000,
+        maxAssetSize: 5120000
     },
     module: {
         rules: [
