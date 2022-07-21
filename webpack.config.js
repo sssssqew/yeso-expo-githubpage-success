@@ -22,7 +22,7 @@ module.exports = {
     },
     output : { 
         path : path.resolve(__dirname, 'dist'), // 빌드후 코드가 저장될 폴더 설정 
-        publicPath: '/yeso-expo/', // 서버의 상대 경로 // build 후 public  메인 URL 경로 (깃허브 저장소 주소) - 빌드시
+        // publicPath: '/yeso-expo/', // 서버의 상대 경로 // build 후 public  메인 URL 경로 (깃허브 저장소 주소) - 빌드시
         // publicPath: '/', // 서버의 상대 경로 // build 후 public  메인 URL 경로 (깃허브 저장소 주소) - 개발시
         filename : 'main.js', // 빌드후 자바스크립트 파일 이름 설정
         environment: {

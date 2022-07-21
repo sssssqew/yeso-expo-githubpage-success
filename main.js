@@ -2,9 +2,9 @@ import { FBXLoader} from "three/examples/jsm/loaders/FBXLoader";
 import { ColladaLoader } from "three/examples/jsm/loaders/ColladaLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-import * as THREE from './three'
-import './Sky'
-import './Water'
+import * as THREE from './src/three'
+import './src/Sky'
+import './src/Water'
 
 import expo from './public/img/expo.jpg'
 import back from './public/img/back.png'
